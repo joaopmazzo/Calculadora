@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - Aula 2</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+    <main>
+        <h2>Calculadora</h2>
+        <div>
+            <form name="form">
+                <input class="display" name="display">
+            </form>
+            <table>
+                <tr>
+                    <td><input type="button" value="C" class="button backspace" onclick="clean()"></td>
+                    <td><input type="button" value="<" class="button yl" onclick="backspace()"></td>
+                    <td><input type="button" value="/" class="button yl" onclick="insert('/')"></td>
+                    <td><input type="button" value="*" class="button yl" onclick="insert('*')"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" value="7" class="button" onclick="insert(7)"></td>
+                    <td><input type="button" value="8" class="button" onclick="insert(8)"></td>
+                    <td><input type="button" value="9" class="button" onclick="insert(9)"></td>
+                    <td><input type="button" value="-" class="button yl" onclick="insert('-')"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" value="4" class="button" onclick="insert(4)"></td>
+                    <td><input type="button" value="5" class="button" onclick="insert(5)"></td>
+                    <td><input type="button" value="6" class="button" onclick="insert(6)"></td>
+                    <td><input type="button" value="+" class="button yl" onclick="insert('+')"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" value="1" class="button" onclick="insert(1)"></td>
+                    <td><input type="button" value="2" class="button" onclick="insert(2)"></td>
+                    <td><input type="button" value="3" class="button" onclick="insert(3)"></td>
+                    <td rowspan="5"><input type="button" value="=" style="height: 110px;" class="button yl"
+                            onclick="equal()"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><input type="button" value="0" style="width: 96%;" class="button"
+                            onclick="insert('0')"></td>
+                    <td><input type="button" value="." class="button" onclick="insert('.')"></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+    <script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
